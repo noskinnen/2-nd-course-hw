@@ -15,48 +15,109 @@
 }
 
 .top {
-    position: absolute;
+    margin: 0;
+    padding: 0;
     width: 1440px;
     height: 1024px;
-    left: 0px;
-    top: 0px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(0001.jpg);
     background: url(img/background.jpg), #C4C4C4;
     background-position: center;
     background-size: cover;
+
     &-content {
-        font-style: normal;
+        display: flex;
+        align-items: flex-start;
+        color: #FFFFFF;
+        flex-direction: column;
+    }
+
+    &-main {
         font-weight: 700;
         font-size: 64px;
         line-height: 78px;
-        display: flex;
-        align-items: center;
+        margin-top: 217.1px;
+        margin-left: 120.22px;
+        width: 788.78px;
         color: #FFFFFF;
+    }
+
+    &-description {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        margin-top: 32px;
+        margin-left: 120.22px;
+        width: 481px;
+        color: #FFFFFF;
+        flex-direction: column;
     }
 }
 
-.header_input {
+.top_input {
+    margin-top: 44px;
     width: 234.06px;
     height: 48.6px;
     left: 120px;
     top: 482.11px;
     background: #9C0332;
     border-radius: 30px;
+    padding-left: 74.03px;
+    padding-right: 74.03px;
+    color: #ffffff;   
+    transition: all 0.3s;
+    &:hover {
+      color: #9C0332;
+      background-color: #ffffff; 
+    }
 }
 
-.header__input::placeholder {
-    width: 234.06px;
-    height: 48.6px;
-    left: 120px;
-    top: 482.11px;
-    background: #9C0332;
-    border-radius: 30px;
-}
 
-.game { 
-    width: ($width-site: - 64) / 3;
+
+.footer {
+    width: 1440px;
+    height: 556px;
+    left: 0px;
+    top: 1024px;
+    background: #000915;
+
+    &-content {
     display: flex;
-    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF; 
+
+    &_text {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        padding-left: 32px;
+        padding-bottom: 32px;
+        color: #FFFFFF;
+    }
+   
+    &_img {
+    margin-top: 38px;
+    margin-left: 120px;
+    width: 379px;
+    height: 300px;
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(0023.jpg);
+    border-radius: 16px;
+      &:hover {
+        transition: 0.10s;
+        transform: scale(1.01);
+        box-shadow: 0px 3px 7px 0px #888;
+      }
+    }
+    }
 }
-
-
